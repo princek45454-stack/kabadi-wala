@@ -1,5 +1,5 @@
-document.getElementById("scrapForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Booking Submitted Successfully! We will contact you soon.");
-    this.reset();
+document.getElementById("pickupForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Booking received! We will contact you shortly.");
+  this.reset();
 });
