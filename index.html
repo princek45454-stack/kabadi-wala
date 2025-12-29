@@ -1,39 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Scrap Pickup Service</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Scrap Pickup Service | Sell Scrap Online</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Hero Section -->
-<header class="hero">
-    <video autoplay muted loop>
-        <source src="https://cdn.coverr.co/videos/coverr-recycling-process-3520/1080p.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-        <h1>Sell Your Scrap Easily</h1>
-        <p>Doorstep Scrap Collection at Best Prices</p>
-        <a href="#booking" class="btn">Book Pickup</a>
-    </div>
-</header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">ScrapKart</div>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#rates">Rates</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#booking" class="btn-small">Book Pickup</a></li>
+  </ul>
+</nav>
 
-<!-- Scrap Rates -->
-<section class="rates">
-    <h2>Today's Scrap Rates</h2>
-    <div class="rate-cards">
-        <div class="card">Copper – ₹700/kg</div>
-        <div class="card">Iron – ₹35/kg</div>
-        <div class="card">Plastic – ₹20/kg</div>
-        <div class="card">Books – ₹15/kg</div>
-        <div class="card">Aluminium – ₹120/kg</div>
-        <div class="card">Wood – ₹10/kg</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Turn Your Scrap Into Cash</h1>
+    <p>Doorstep scrap pickup with best market rates</p>
+    <div class="hero-btns">
+      <a href="#rates" class="btn">Check Rates</a>
+      <a href="#booking" class="btn outline">Book Pickup</a>
     </div>
+  </div>
 </section>
 
-<!-- Booking Form -->
-<section id="booking" class="booking">
+<!-- HOW IT WORKS -->
+<section id="how" class="section">
+  <h2>How It Works</h2>
+  <div class="cards">
+    <div class="card">📅<h3>Schedule Pickup</h3><p>Book online in 1 minute</p></div>
+    <div class="card">🚚<h3>We Visit You</h3><p>On your chosen time</p></div>
+    <div class="card">⚖️<h3>Digital Weighing</h3><p>Transparent pricing</p></div>
+    <div class="card">💰<h3>Instant Payment</h3><p>Cash / UPI</p></div>
+  </div>
+</section>
+
+<!-- WHAT WE COLLECT -->
+<section id="services" class="section dark">
+  <h2>What We Collect</h2>
+  <div class="grid">
+    <div class="box">Copper</div>
+    <div class="box">Iron</div>
+    <div class="box">Aluminium</div>
+    <div class="box">Plastic</div>
+    <div class="box">Books</div>
+    <div class="box">Electronics</div>
+    <div class="box">Brass</div>
+    <div class="box">Wood</div>
+  </div>
+</section>
+
+<!-- SCRAP RATES -->
+<section id="rates" class="section">
+  <h2>Today’s Scrap Rates</h2>
+  <table>
+    <tr><th>Scrap Type</th><th>Rate (₹/kg)</th></tr>
+    <tr><td>Copper</td><td>700</td></tr>
+    <tr><td>Aluminium</td><td>120</td></tr>
+    <tr><td>Iron</td><td>35</td></tr>
+    <tr><td>Plastic</td><td>20</td></tr>
+    <tr><td>Books</td><td>15</td></tr>
+    <tr><td>Wood</td><td>10</td></tr>
+  </table>
+</section>
+
+<!-- WHY US -->
+<section class="section dark">
+  <h2>Why Choose Us</h2>
+  <ul class="why">
+    <li>✔ Accurate digital weighing</li>
+    <li>✔ Best market prices</li>
+    <li>✔ Same-day pickup</li>
+    <li>✔ Trusted local collectors</li>
+    <li>✔ Eco-friendly recycling</li>
+  </ul>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+  <h2>Book Scrap Pickup</h2>
+  <form id="pickupForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="tel" placeholder="Mobile Number" required>
+    <textarea placeholder="Complete Address" required></textarea>
+
+    <select required>
+      <option value="">Select Scrap Type</option>
+      <option>Copper</option>
+      <option>Iron</option>
+      <option>Plastic</option>
+      <option>Books</option>
+      <option>Electronics</option>
+    </select>
+
+    <input type="number" placeholder="Approx Weight (kg)" required>
+    <button type="submit" class="btn">Submit Booking</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 ScrapKart | Doorstep Scrap Pickup</p>
+  <p>Call / WhatsApp: +91 8851535831</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
     <h2>Book Scrap Pickup</h2>
     <form id="scrapForm">
         <input type="text" placeholder="Full Name" required>
